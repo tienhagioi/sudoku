@@ -10,9 +10,9 @@
 	  window.addEventListener("resize",onResize)
 	  function onResize()
 	  {
-	     gameInstance.SendMessage("Debug","SetWidth",window.innerWidth);
-		 gameInstance.SendMessage("Debug","SetHeight",window.innerHeight);
-		 gameInstance.SendMessage("Debug","OnResize");
+	     gameInstance.SendMessage("GameControl","SetWidth",window.innerWidth);
+		 gameInstance.SendMessage("GameControl","SetHeight",window.innerHeight);
+		 gameInstance.SendMessage("GameControl","OnResize");
 	  }
     </script>
   </head>
