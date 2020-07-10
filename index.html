@@ -10,13 +10,13 @@
 	  window.addEventListener("resize",onResize)
 	  function onResize()
 	  {
-	     gameInstance.SendMessage("GameControl","SetWidth",window.innerWidth);
-		 gameInstance.SendMessage("GameControl","SetHeight",window.innerHeight);
-		 gameInstance.SendMessage("GameControl","OnResize");
+	     //gameInstance.SendMessage("GameControl","SetWidth",window.innerWidth);
+		 //gameInstance.SendMessage("GameControl","SetHeight",window.innerHeight);
+		 //gameInstance.SendMessage("GameControl","OnResize");
 	  }
     </script>
   </head>
   <body>
-    <div id="gameContainer"></div>
+    <div id="gameContainer" style="padding: 0px; position: absolute; height:100vh; width:100vw;"></div>
   </body>
 </html>
