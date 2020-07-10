@@ -7,9 +7,16 @@
     <script src="Build/UnityLoader.js"></script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/New folder.json");
+	  window.addEventListener("resize",onResize)
+	  function onResize()
+	  {
+	     gameInstance.SendMessage("Debug","SetWidth",window.innerWidth);
+		 gameInstance.SendMessage("Debug","SetHeight",window.innerHeight);
+		 gameInstance.SendMessage("Debug","OnResize");
+	  }
     </script>
   </head>
   <body>
-    <div id="gameContainer"</div>
+    <div id="gameContainer"></div>
   </body>
 </html>
