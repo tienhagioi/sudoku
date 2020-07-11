@@ -7,9 +7,14 @@
     <script src="Build/UnityLoader.js"></script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/New folder.json");
+      
+      function GetInput() {  
+      var person = prompt("Input", "Default text");  
+       return person
+      }
     </script>
   </head>
   <body>
-    <div id="gameContainer" style="width: 360px; height: 640px; margin: auto"></div>
+    <div id="gameContainer"></div>
   </body>
 </html>
